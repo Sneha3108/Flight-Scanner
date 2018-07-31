@@ -1,0 +1,107 @@
+  {
+    "01122018": [
+      {
+        "price": "3302.0",
+        "departureTime": "07:30",
+        "aln": "Vistara",
+        "arrivalDate": "01/01/2018",
+        "arrivalTime": "09:40",
+        "origin": "delhi",
+        "departure": "pune"
+      },
+      {
+        "price": "3302.0",
+        "departureTime": "07:30",
+        "aln": "Vistara",
+        "arrivalDate": "01/01/2018",
+        "arrivalTime": "09:40",
+        "origin": "pune",
+        "departure": "delhi"
+      },
+      {
+        "price": "3302.0",
+        "departureTime": "07:30",
+        "aln": "Vistara",
+        "arrivalDate": "01/01/2018",
+        "arrivalTime": "09:40",
+        "origin": "delhi",
+        "departure": "pune"
+      },
+      {
+        "price": "3302.0",
+        "departureTime": "07:30",
+        "aln": "Vistara",
+        "arrivalDate": "01/01/2018",
+        "arrivalTime": "09:40",
+        "origin": "delhi",
+        "departure": "pune"
+      },
+      {
+        "price": "3302.0",
+        "departureTime": "07:30",
+        "aln": "Vistara",
+        "arrivalDate": "01/01/2018",
+        "arrivalTime": "09:40",
+        "origin": "delhi",
+        "departure": "pune"
+      },
+      {
+        "price": "3302.0",
+        "departureTime": "07:30",
+        "aln": "Vistara",
+        "arrivalDate": "01/01/2018",
+        "arrivalTime": "09:40",
+        "origin": "delhi",
+        "departure": "pune"
+      },
+      {
+        "price": "3302.0",
+        "departureTime": "07:30",
+        "aln": "Vistara",
+        "arrivalDate": "01/01/2018",
+        "arrivalTime": "09:40",
+        "origin": "delhi",
+        "departure": "pune"
+      }
+    ],
+    "02122018": [
+         {
+            "price": "3302.0",
+            "departureTime": "07:30",
+            "aln": "Vistara",
+            "arrivalDate": "01/01/2018",
+            "arrivalTime": "09:40",
+            "origin": "delhi",
+            "departure": "pune"
+        },
+         {
+            "price": "3302.0",
+            "departureTime": "07:30",
+            "aln": "Vistara",
+            "arrivalDate": "01/01/2018",
+            "arrivalTime": "09:40",
+            "origin": "delhi",
+            "departure": "pune"
+        }
+    ],
+    "01032018": [
+         {
+            "price": "3302.0",
+            "departureTime": "07:30",
+            "aln": "Vistara",
+            "arrivalDate": "01/01/2018",
+            "arrivalTime": "09:40",
+            "origin": "delhi",
+            "departure": "pune"
+        },
+         {
+            "price": "3302.0",
+            "departureTime": "07:30",
+            "aln": "Vistara",
+            "arrivalDate": "01/01/2018",
+            "arrivalTime": "09:40",
+            "origin": "delhi",
+            "departure": "pune"
+        }
+    ]
+  }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flight Scanner</title>
+    <link rel="stylesheet" href="app/css/reset.css">
+    <link rel="stylesheet" href="app/css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link  href="node_modules/@fengyuanchen/datepicker/dist/datepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/rangeslider-js/dist/styles.min.css">
+</head>
+<body>
+
+    <div class="searchContainer">
+        <header>
+            <h1>Flight search engine</h1>
+        </header>
+        <div class="searchWidget">
+          <form class="">
+              <ul class="tabs">
+                  <li data-journeyType="oneway" class="active">One way</li>
+                  <li data-journeyType="return">Return</li>
+              </ul>
+              <div class="inputControl">
+                  <div class="citySearchContainer">
+                      <input type="text" name="originCity" class="citySearch" placeholder="Enter Origin City">
+                  </div>
+                  <div class="citySearchContainer">
+                    <input type="text" class="citySearch" name="destinationCity" placeholder="Enter Destination City">
+                  </div>
+                  <input data-toggle="datepicker" name="primaryDate" placeholder="Departure Date">
+                  <input class="returnDate" name="returnDate" data-toggle="datepicker" placeholder="Return Date">
+                  <input type="number" name="passengers" placeholder="Passengers">
+                  <input type="submit" value="Search">
+              </div>
+              <div class="priceSliderContainer">
+                <h2>Refine Flight Search</h2>
+                <input class="priceSlider" type="range" min="0" max="5" value="1" step="1">
+              </div>
+          </form>
+        </div>
+        <div class="searchResults">
+            <div class="searchDetail">
+                <div class="detailHead">
+                    <h2>PUNE > DELHI > PUNE</h2>
+                    <div>
+                        <div><span>Depart: </span>1st jan 2012</div>
+                        <div><span>Return: </span>10th jan 2012</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="availableTickets">
+                <li>
+                  <div class="fl leftWrapper">
+                      <span class="ticketPrice">Rs. 9500.00</span>
+                      <div class="departTicket fl">
+                        <span>AI-202</span>
+                        <span>PUNE > DELHI</span>
+                        <span>Depart: 10:00 AM</span>
+                        <span>Arrive: 10:00 AM</span>
+                      </div>
+                      <div class="returnTicket fl">
+                        <span>AI-202</span>
+                        <span>PUNE > DELHI</span>
+                        <span>Depart: 10:00 AM</span>
+                        <span>Arrive: 10:00 AM</span>
+                      </div>
+                  </div>
+                    <div class="book fl">
+                        <img src="app/images/200x150.png" alt="placeholder image">
+                        <button>Book this flight</button>
+                    </div>
+                </li>
+                <li>
+                  <div class="fl leftWrapper">
+                      <span class="ticketPrice">Rs. 9500.00</span>
+                      <div class="departTicket fl">
+                        <span>AI-202</span>
+                        <span>PUNE > DELHI</span>
+                        <span>Depart: 10:00 AM</span>
+                        <span>Arrive: 10:00 AM</span>
+                      </div>
+                      <div class="returnTicket fl">
+                        <span>AI-202</span>
+                        <span>PUNE > DELHI</span>
+                        <span>Depart: 10:00 AM</span>
+                        <span>Arrive: 10:00 AM</span>
+                      </div>
+                  </div>
+                    <div class="book fl">
+                        <img src="app/images/200x150.png" alt="placeholder image">
+                        <button>Book this flight</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/x-handlebars-template" id="cityListTemplate">
+      <ul class="autocomplete">
+        {{#each this}}
+          <li>{{name}}</li>
+        {{/each}}
+      </ul>
+    </script>
+
+    <script type="text/x-handlebars-template" id="ticketTemplate">
+      {{#each this}}
+        <li>
+          <div class="fl leftWrapper">
+              <span class="ticketPrice">Rs. 9500.00</span>
+              <div class="departTicket fl">
+                <span>AI-202</span>
+                <span>PUNE > DELHI</span>
+                <span>Depart: 10:00 AM</span>
+                <span>Arrive: 10:00 AM</span>
+              </div>
+              <div class="returnTicket fl">
+                <span>AI-202</span>
+                <span>PUNE > DELHI</span>
+                <span>Depart: 10:00 AM</span>
+                <span>Arrive: 10:00 AM</span>
+              </div>
+          </div>
+            <div class="book fl">
+                <img src="app/images/200x150.png" alt="placeholder image">
+                <button>Book this flight</button>
+            </div>
+        </li>
+      {{/each}}
+    </script>
+
+    <script src="bundle.js"></script>
+</body>
+</html>

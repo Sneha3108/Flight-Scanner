@@ -1,0 +1,267 @@
+/************ global styles *************/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+
+/* =14px */
+
+h1 {
+  font-size: 2.4rem;
+}
+
+
+/* =24px */
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+
+/*********** global styles end *************/
+
+
+/********** header styles*******************/
+
+.searchContainer header {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bbb;
+}
+
+
+/***************** header ends****************/
+
+
+/*************** search widget styles***************/
+
+.searchContainer {
+  width: 100%;
+  padding: 10px;
+}
+
+.searchContainer h1 {
+  font-weight: bold;
+}
+
+.searchContainer .searchWidget {
+  width: 30%;
+  max-width: 300px;
+  float: left;
+}
+
+.searchWidget input {
+  display: block;
+  margin-bottom: 11px;
+  padding: 6px;
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+
+.searchWidget .citySearch {
+  margin-bottom: 0;
+}
+
+.searchWidget .citySearch:focus+.autocomplete {
+  /*display: block;*/
+}
+
+.citySearchContainer {
+  margin-bottom: 11px;
+  position: relative;
+}
+
+.citySearchContainer .autocomplete {
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #333;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 9;
+  /*display: none;*/
+}
+
+.citySearchContainer .autocomplete li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tabs li {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.tabs li.active {
+  background-color: #2CC185;
+  color: #fff;
+}
+
+.inputControl {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  padding: 14px 12px;
+}
+
+.priceSliderContainer {
+  border: 1px solid #333;
+  padding: 28px 17px 27px;
+  margin-top: 10px;
+}
+
+.priceSliderContainer h2 {
+  padding-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+
+/**************** search widget styles ends**************/
+
+
+/**************** search results styles**************/
+
+.searchContainer .searchResults {
+  width: 70%;
+  float: left;
+  padding-left: 10px;
+}
+
+.searchResults .detailHead::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.searchResults .detailHead {
+  border-bottom: 1px solid #333;
+  margin-bottom: 15px;
+}
+
+.detailHead h2 {
+  font-size: 1.8rem;
+  padding: 15px 0px;
+  float: left;
+}
+
+.detailHead>div {
+  float: right;
+  padding: 15px 0;
+}
+
+.availableTickets li {
+  padding: 10px 10px;
+  border: 1px solid #333;
+  margin-bottom: 14px;
+  min-height: 173px;
+}
+
+.availableTickets li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.availableTickets .leftWrapper {
+  width: 50%;
+}
+
+.ticketPrice {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.departTicket,
+.returnTicket {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+}
+
+.book {
+  width: 50%;
+}
+
+.book img {
+  display: block;
+}
+
+.book button {
+  border: 0;
+  padding: 10px 10px;
+  margin-top: 10px;
+  min-width: 200px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.book button:hover {
+  background-color: #2CC185;
+  color: #fff;
+}
+
+.departTicket span,
+.returnTicket span {
+  display: block;
+  padding: 6px 0;
+}
+
+
+/**************** search results styles end**************/
+
+
+/**************** Responsive styling starts here**************/
+
+@media only screen and (max-width: 600px) {
+  .searchContainer .searchWidget {
+      width: 100%;
+      max-width: 100%;
+  }
+  .searchContainer .searchResults {
+      width: 100%;
+      margin-top: 24px;
+  }
+  .availableTickets .leftWrapper {
+      width: 100%;
+  }
+  .book {
+      float: none;
+      margin: 0 auto;
+  }
+  .book img {
+      padding-top: 16px;
+  }
+}
