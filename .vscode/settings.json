@@ -1,3 +1,63 @@
 {
-  "git.ignoreLimitWarning": true
+"git.ignoreLimitWarning": true,
+"editor.tabSize": 2,
+"workbench.editor.enablePreview": false,
+"workbench.editor.enablePreviewFromQuickOpen": false,
+"editor.rulers": [80],
+"editor.minimap.enabled": true,
+"editor.renderIndentGuides": true,
+"editor.showFoldingControls": "always",
+"files.insertFinalNewline": true,
+"files.autoSave": "off",
+"files.exclude": {
+  "**/dest": true,
+  "**/dist": true,
+  "**/build": true,
+  "**/node_modules": true,
+  "**/coverage": true,
+  "**/log": true,
+  "**/logs": true,
+  "**/bundle.js": true,
+  "**/bundle.js.map": true,
+  "**/main.css": true,
+  "**/main.css.map": true
+},
+"files.watcherExclude": {
+  "**/bower_components/**": true,
+  "**/dest/**": true,
+  "**/dist/**": true,
+  "**/build/**": true,
+  "**/log/**": true,
+  "**/logs/**": true,
+  "**/node_modules/**": true,
+  "**/coverage/**": true,
+  "**/.nyc_output/**": true
+},
+"search.exclude": {
+  "**/dest": true,
+  "**/dist": true,
+  "**/build/**": true,
+  "**/bower_components": true,
+  "**/node_modules": true,
+  "**/log": true,
+  "**/logs": true,
+  "**/coverage": true,
+  "**/.nyc_output": true
+},
+"files.trimTrailingWhitespace": true,
+"prettier.eslintIntegration": true,
+"eslint.autoFixOnSave": true,
+"window.zoomLevel": 0,
+"editor.multiCursorModifier": "ctrlCmd",
+"terminal.integrated.scrollback": 100000,
+"gitlens.advanced.messages": {
+  "suppressCommitHasNoPreviousCommitWarning": false,
+  "suppressCommitNotFoundWarning": false,
+  "suppressFileNotUnderSourceControlWarning": false,
+  "suppressGitVersionWarning": false,
+  "suppressLineUncommittedWarning": false,
+  "suppressNoRepositoryWarning": false,
+  "suppressUpdateNotice": false,
+  "suppressWelcomeNotice": true
+}
 }

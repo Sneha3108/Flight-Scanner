@@ -1,5 +1,6 @@
 import $ from 'jquery';
 window.$ = $;
+import '../css/main.scss'
 import activateTab from './components/searchTab';
 import initDatePicker from './components/datePicker';
 import getCities from './components/getCityList';

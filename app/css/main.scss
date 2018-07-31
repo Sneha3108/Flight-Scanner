@@ -1,0 +1,274 @@
+@import 'reset';
+
+/************ Variables *************/
+$green-color : #2CC185;
+$white-color : #fff;
+$border-default : 1px solid #333;
+$full-width: 100%;
+$padding-default : 8px;
+$float-left : left;
+$float-right : right;
+$display-block :block;
+
+%remove-float-shared {
+  display: $display-block ;
+  content: "";
+  clear: both;
+}
+
+/************ global styles *************/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+
+/* =14px */
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+
+/* =24px */
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fl {
+  float: $float-left;
+}
+
+.fr {
+  float: $float-right;
+}
+
+
+/*********** global styles end *************/
+
+/*************** search widget styles***************/
+
+.searchContainer {
+  width: $full-width;
+  padding: $padding-default;
+
+  header {
+    margin-bottom: 15px;
+    padding-bottom: $padding-default;
+    border-bottom: $border-default;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+
+  .searchWidget {
+    width: 30%;
+    max-width: 300px;
+    float: $float-left;
+  }
+}
+
+.searchWidget {
+  input {
+  display: $display-block ;
+  margin-bottom: 11px;
+  padding: $padding-default;
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+  width: $full-width;
+  }
+  .citySearch {
+    margin-bottom: 0;
+  }
+}
+
+.citySearchContainer {
+  margin-bottom: 11px;
+  position: relative;
+
+  .autocomplete {
+    border: $border-default;
+    position: absolute;
+    width: $full-width;
+    background: $white-color;
+    z-index: 9;
+
+    li {
+      padding: $padding-default;
+      cursor: pointer;
+    }
+  }
+
+}
+
+
+.tabs {
+  li {
+  display: inline-block;
+  padding: $padding-default;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+  }
+  .active {
+    background-color: $green-color;
+    color: $white-color;
+  }
+}
+
+.inputControl {
+border: $border-default ;
+  padding: 14px 12px;
+}
+
+.priceSliderContainer {
+border: $border-default;
+  padding: 28px 17px 27px;
+  margin-top: 10px;
+
+  h2 {
+    padding-bottom: 25px;
+  }
+}
+/**************** search widget styles ends**************/
+
+
+/**************** search results styles**************/
+
+.searchContainer {
+  .searchResults {
+  width: 70%;
+  float: $float-left;
+  padding-left: 10px;
+  }
+  .detailHead {
+    border-bottom: $border-default ;
+    margin-bottom: 15px;
+
+    h2 {
+      padding: 15px 0px;
+      float: $float-left;
+    }
+
+     > div {
+      float: $float-right;
+      padding: 15px 0;
+    }
+
+    &:after {
+      @extend %remove-float-shared;
+    }
+  }
+}
+
+.availableTickets{
+  li {
+    padding: $padding-default;
+    border: $border-default;
+    margin-bottom: 14px;
+    min-height: 173px;
+
+    &:after {
+      @extend %remove-float-shared;
+    }
+  }
+  .leftWrapper {
+    width: $full-width / 2;
+  }
+
+}
+.ticketPrice {
+  font-size: 2rem;
+  font-weight: bold;
+  display: $display-block ;
+  padding-bottom: $padding-default;
+}
+
+.departTicket,
+.returnTicket {
+  float: $float-left;
+  width: $full-width / 2;
+  padding-right: 15px;
+
+  span {
+    display: $display-block ;
+    padding: $padding-default 0;
+  }
+}
+
+.book {
+  width: $full-width / 2;
+
+  img {
+    display: $display-block ;
+  }
+
+  button {
+    padding: $padding-default;
+    margin-top: 10px;
+    min-width: 200px;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+}
+
+.book button:hover {
+  background-color: $green-color;
+  color: $white-color;
+}
+
+/**************** search results styles end**************/
+
+
+/**************** Responsive styling starts **************/
+
+@media only screen and (max-width: 600px) {
+  .searchContainer {
+    .searchWidget {
+      width: $full-width;
+      max-width: $full-width;
+    }
+
+    .searchResults {
+      width: $full-width;
+      margin-top: $padding-default * 4;
+  }
+
+  }
+  .availableTickets .leftWrapper {
+      width: $full-width;
+  }
+  .book {
+      float: none;
+      margin: 0 auto;
+
+      img {
+        padding-top: $padding-default * 2;
+      }
+  }
+}
