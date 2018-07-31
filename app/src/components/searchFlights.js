@@ -14,6 +14,7 @@ var searchTickets = () => {
     });
 }
 
+// Need real time data to validate this
 var filterTickets = tickets => {
   var $searchForm = $('.searchWidget form'),
       originCity = $searchForm.find('[name=originCity]').val(),
